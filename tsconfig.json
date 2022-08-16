@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "./dist",
+    "declaration": true,
+    "useDefineForClassFields": true,
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "removeComments": true,
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**.test.ts",
+    "**.test.tsx",
+    "**.spec.ts",
+    "**.spec.tsx"
+  ]
+}

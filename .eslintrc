@@ -1,0 +1,22 @@
+{
+  "plugins": ["solid"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": "off",
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-console": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": ["path"]
+      }
+    ],
+    "eslint-comments/no-unlimited-disable": "off",
+    "import/no-named-as-default": "off"
+  }
+}
