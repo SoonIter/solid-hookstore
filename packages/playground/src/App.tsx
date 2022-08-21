@@ -1,29 +1,9 @@
-import { Link, Route, Routes } from '@solidjs/router';
-import { Component, createContext, JSXElement } from 'solid-js';
+import { Component } from 'solid-js';
+import { createHookStore } from 'solid-hookstore';
+import { useEventListener } from '@solid-hookstore/hooks/useEventListener';
 
-const createSubTreeHookStore = () => {
-  const context = createContext({});
-  const HookStoreProvider: Component<{ children: JSXElement }> = (props) => {
-    const store = {} as Record<string, any>;
-    return <context.Provider value={store}>{props.children}</context.Provider>;
-  };
-  const defineHookStore = <Name extends string, StoreType extends Record<keyof any, any>>(
-    name: Name,
-    fn: () => StoreType,
-  ) => {
-    const globalStore = useContext(context) as Record<Name, StoreType>;
-    if (globalStore?.[name] !== undefined) {
-      return () => globalStore[name];
-    }
-    const res = fn();
-    globalStore[name] = res;
-    return () => globalStore[name];
-  };
-  return { HookStoreProvider, defineHookStore };
-};
-
-const { HookStoreProvider, defineHookStore } = createSubTreeHookStore();
-const { HookStoreProvider: Provider2, defineHookStore: define2 } = createSubTreeHookStore();
+const { defineHookStore } = createHookStore();
+const { defineHookStore: define2 } = createHookStore();
 
 const useCountStore = defineHookStore('count', () => {
   const [a, setA] = createSignal(0);
@@ -42,9 +22,25 @@ const useCount2Store = define2('count', () => {
 const App2: Component = () => {
   const { a, setA } = useCountStore();
   const { b, setB } = useCount2Store();
+  const [divRefSignal, setSignal] = createSignal(null);
+  let divRef = null as unknown as HTMLDivElement;
+  createEffect(() => {
+    console.log(divRef);
+  });
+  useEventListener(
+    () => divRef,
+    'click',
+    () => {
+      console.log('hello');
+    },
+  );
+  useEventListener(divRefSignal, 'click', () => {
+    console.log('hello');
+  });
   return (
     <>
       <div
+        ref={divRef}
         onClick={() => {
           setA((a) => a + 1);
         }}
@@ -52,6 +48,7 @@ const App2: Component = () => {
         {a}
       </div>
       <div
+        ref={setSignal}
         onClick={() => {
           setB((a) => a + 1);
         }}
@@ -90,14 +87,5 @@ export default () => {
       <App />
       <App2 />
     </>
-  );
-  // if you wanna create some stores that only manage a subtree, you can use the Provider.
-  return (
-    <HookStoreProvider>
-      <Provider2>
-        <App />
-        <App2 />
-      </Provider2>
-    </HookStoreProvider>
   );
 };

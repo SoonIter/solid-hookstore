@@ -1,0 +1,16 @@
+{
+  "name": "@solid-hookstore/hooks",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.4.2",
+    "solid-js": "^1.4.8",
+    "@solid-hookstore/shared": "workspace:*",
+    "solid-hookstore": "workspace:*"
+  },
+  "devDependencies": {
+    
+  }
+}

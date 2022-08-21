@@ -1,16 +1,19 @@
 {
-  "name": "vite-template-solid",
+  "name": "@solid-hookstore/vite-template-solid",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@solidjs/router": "^0.4.2",
     "solid-js": "^1.4.8",
-    "@solid-hookstore/shared": "workspace:*"
+    "@solid-hookstore/shared": "workspace:*",
+    "solid-hookstore": "workspace:*",
+    "@solid-hookstore/hooks": "workspace:*"
   },
   "devDependencies": {
     "prettier": "^2.7.1",

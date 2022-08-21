@@ -28,8 +28,8 @@
   ],
   "scripts": {
     "build": "tsup ./src/index.ts",
-    "release": "nr prerelease && nr build && npm publish",
-    "prerelease": "nr lint:fix && nr test:once",
+    "release": "nr build && npx bumpp patch --commit '🔖v' && npm publish",
+    "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",
     "test:ui": "vitest --ui",
@@ -42,11 +42,12 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@solid-hookstore/shared": "workspace:0.1.0"
+    "@solid-hookstore/shared": "workspace:*"
   },
   "devDependencies": {
     "@antfu/ni": "^0.17.2",
     "@vitest/ui": "^0.22.0",
+    "bumpp": "^8.2.1",
     "c8": "^7.12.0",
     "eslint": "^8.22.0",
     "eslint-plugin-solid": "~0.7.1",
