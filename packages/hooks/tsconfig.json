@@ -6,6 +6,8 @@
     "moduleResolution": "node",
     "rootDir": "./",
     "outDir": "dist",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "declaration": true
   }
 }

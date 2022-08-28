@@ -22,7 +22,7 @@ const useCount2Store = define2('count', () => {
 const App2: Component = () => {
   const { a, setA } = useCountStore();
   const { b, setB } = useCount2Store();
-  const [divRefSignal, setSignal] = createSignal(null);
+  const [divRefSignal, setSignal] = createSignal<HTMLElement>(null as unknown as HTMLElement);
   let divRef = null as unknown as HTMLDivElement;
   createEffect(() => {
     console.log(divRef);

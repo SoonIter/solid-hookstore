@@ -1,11 +1,18 @@
-import { render } from 'solid-js/web'
+import { render } from 'solid-js/web';
 
-import './index.css'
-import 'virtual:uno.css'
+import './index.css';
+import 'virtual:uno.css';
 
-import App from './App'
-import { Router } from '@solidjs/router'
+import App from './App5';
+import { Router } from '@solidjs/router';
 
-
-
-render(() => <Router><App /></Router >, document.getElementById('root') as HTMLElement)
+render(
+  () => (
+    <div m-10 p-10 ring-2>
+      <Router>
+        <App />
+      </Router>
+    </div>
+  ),
+  document.getElementById('root') as HTMLElement,
+);
