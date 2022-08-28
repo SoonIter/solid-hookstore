@@ -1,8 +1,6 @@
 {
-  "name": "@solid-hookstore/solid-hookstore-monorepo",
-  "type": "module",
-  "version": "1.0.0",
-  "private": true,
+  "name": "solid-hookstore",
+  "version": "0.0.2",
   "packageManager": "pnpm@7.5.0",
   "description": "solid-hookstore monorepo template",
   "author": {
@@ -27,8 +25,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup ./src/index.ts",
-    "release": "nr build && npx bumpp patch --commit '🔖v' && npm publish",
+    "build": "tsup",
+    "release": "nr build && npx bumpp patch --commit '🔖v' && pnpm publish",
     "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",
@@ -42,7 +40,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@solid-hookstore/shared": "workspace:*"
+    "solid-js": "^1.5.1"
   },
   "devDependencies": {
     "@antfu/ni": "^0.17.2",
