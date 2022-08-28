@@ -2,8 +2,8 @@ import { expect, it } from "vitest";
 import useCounter from "../packages/hooks/useCounter";
 
 it("useCounter", () => {
-  const [x, add] = useCounter(0);
+  const [x, { inc }] = useCounter(0);
   expect(x()).toBe(0);
-  add()
+  inc();
   expect(x()).toBe(1);
 });

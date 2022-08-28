@@ -1,32 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "outDir": "./dist",
-    "declaration": true,
-    "useDefineForClassFields": true,
-    "moduleResolution": "Node",
     "module": "ESNext",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true,
-    "jsx": "react",
-    "removeComments": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["solid-js"],
+    "removeComments": false,
     "downlevelIteration": true,
     "noImplicitAny": false,
     "noUnusedLocals": false
   },
-  "exclude": [
-    "dist",
-    "node_modules",
-  ]
+  "exclude": ["dist", "node_modules"]
 }
