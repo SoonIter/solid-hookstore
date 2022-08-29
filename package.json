@@ -1,6 +1,6 @@
 {
   "name": "solid-hookstore",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "pnpm@7.5.0",
   "description": "solid-hookstore monorepo template",
   "author": {
@@ -13,11 +13,14 @@
     "url": "https://github.com/SoonIter/solid-hookstore/issues"
   },
   "keywords": [
-    "semi-design",
-    "solid"
+    "solid-js",
+    "hooks"
   ],
-  "main": "",
-  "types": "",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.glob.min.js",
+  "jsdelivr": "./dist/index.glob.min.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "package.json",
@@ -25,15 +28,16 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "nr generate && tsup",
     "release": "nr build && npx bumpp patch --commit '🔖v' && pnpm publish",
     "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "lint": "eslint .",
-    "lint:fix": "nr lint --fix"
+    "lint": "eslint ./packages/**/*.ts",
+    "lint:fix": "nr lint --fix",
+    "generate": "soon glob ./packages/hooks/use*/index.ts ./packages/basic/index.ts"
   },
   "publishConfig": {
     "access": "public",
@@ -43,12 +47,15 @@
     "solid-js": "^1.5.1"
   },
   "devDependencies": {
+    "soon-cli": "1.1.9",
     "@antfu/ni": "^0.17.2",
+    "@typescript-eslint/parser": "^5.35.1",
     "@vitest/ui": "^0.22.0",
     "bumpp": "^8.2.1",
     "c8": "^7.12.0",
     "eslint": "^8.22.0",
     "eslint-plugin-solid": "~0.7.1",
+    "fast-glob": "^3.2.11",
     "happy-dom": "^6.0.4",
     "lint-staged": "13.0.3",
     "simple-git-hooks": "^2.8.0",
