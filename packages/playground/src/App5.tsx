@@ -1,7 +1,4 @@
-import { createSignal } from 'solid-js';
-import useLocalStorage from '@solid-hookstore/hooks/useLocalStorage';
-import useTitle from '@solid-hookstore/hooks/useTitle';
-import { createHookStore, createSharedValue } from 'solid-hookstore';
+import { useLocalStorage, useTitle, createHookStore, createSharedValue } from 'solid-hookstore';
 
 const { defineHookStore } = createHookStore();
 const useStore = defineHookStore('hello', () => {

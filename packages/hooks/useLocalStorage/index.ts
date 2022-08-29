@@ -14,9 +14,10 @@ const useLocalStorage = <T>(key: string, initialValue: T) => {
   );
 
   createEffect(() => {
-     localStorage.setItem(key, encode(value()));
+    localStorage.setItem(key, encode(value()));
   });
 
   return [value, setValue] as ReturnType<typeof createSignal<T>>;
 };
 export default useLocalStorage;
+export { useLocalStorage };

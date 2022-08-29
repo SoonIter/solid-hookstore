@@ -25,16 +25,6 @@ type Options = {
   passive?: boolean;
 };
 
-// const useEventListener: createUseEventListener<
-//   HTMLElement,
-//   HTMLElementEventMap
-// > = (target, eventName, handler, options) => {
-//   createEffect(() => {
-//     target && access(target).addEventListener(eventName, handler, options);
-//     return () =>
-//       access(target).removeEventListener(eventName, handler, options);
-//   });
-// };
 
 function useEventListener<K extends keyof HTMLElementEventMap>(
   target: HTMLElement | (() => HTMLElement) | Accessor<HTMLElement>,

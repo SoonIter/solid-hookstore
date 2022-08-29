@@ -1,9 +1,11 @@
 // tsup.config.js
 import { defineConfig } from "tsup";
 export default defineConfig({
-  entry: ["packages/hooks/use*/index.ts", "packages/basic/index.ts"],
+  entry: ["index.ts"],
   clean: true,
   dts: true,
-  format: ["esm", "cjs"],
+  splitting:true,
+  minify: true,
+  format: ["esm", "cjs", "iife"],
   tsconfig: "./tsconfig.json",
 });

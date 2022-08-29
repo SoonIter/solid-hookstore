@@ -29,7 +29,8 @@
   ],
   "scripts": {
     "build": "nr generate && tsup",
-    "release": "nr build && npx bumpp patch --commit '🔖v' && pnpm publish",
+    "release": "nr build && npx bumpp patch --commit '🔖v'",
+    "publish": "pnpm publish",
     "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",

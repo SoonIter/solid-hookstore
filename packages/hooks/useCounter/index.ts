@@ -11,3 +11,4 @@ const useCounter = (initialNum?: number) => {
   ];
 };
 export default useCounter;
+export { useCounter };
