@@ -3,6 +3,7 @@
   "plugins": ["solid"],
   "extends": ["eslint:recommended", "plugin:solid/recommended"],
   "rules": {
-    "no-unused-vars":"off"
+    "no-unused-vars":"off",
+    "no-undef":"off"
   }
 }

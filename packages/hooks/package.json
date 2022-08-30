@@ -1,16 +1,35 @@
 {
   "name": "@solid-hookstore/hooks",
-  "version": "0.0.0",
+  "version": "0.0.3",
+  "description": "@solid-hookstore/basic",
+  "author": {
+    "name": "SoonIter",
+    "email": "1730214056@qq.com"
+  },
   "license": "MIT",
+  "repository": "https://github.com/SoonIter/solid-hookstore",
+  "bugs": {
+    "url": "https://github.com/SoonIter/solid-hookstore/issues"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.global.js",
+  "jsdelivr": "./dist/index.global.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
+    "build": "nr generate && tsup",
+    "generate": "soon glob ./use*/index.ts ./create*/index.ts"
   },
   "dependencies": {
     "@solidjs/router": "^0.4.2",
     "solid-js": "^1.4.8",
-    "@solid-hookstore/shared": "workspace:*",
-    "solid-hookstore": "workspace:*"
+    "@solid-hookstore/shared": "workspace:*"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }

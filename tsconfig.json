@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "rootDir": "./",
+    "module": "commonjs",
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "moduleResolution": "node",
@@ -13,7 +14,8 @@
     "removeComments": false,
     "downlevelIteration": true,
     "noImplicitAny": false,
-    "noUnusedLocals": false
+    "noUnusedLocals": false,
+    "declaration": true
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["**/dist/**/*", "node_modules"]
 }

@@ -9,6 +9,5 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "declaration": true
-  },
-  "exclude": ["./dist/**/*"]
+  }
 }

@@ -7,10 +7,10 @@
     "format": "prettier -w ."
   },
   "dependencies": {
-    "@solid-hookstore/hooks": "workspace:*",
-    "@solid-hookstore/shared": "workspace:*",
     "@solidjs/router": "^0.4.2",
-    "solid-hookstore": "^0.0.2",
+    "solid-hookstore": "workspace:*",
+    "@solid-hookstore/basic":"workspace:*",
+    "@solid-hookstore/hooks": "workspace:*",
     "solid-js": "^1.4.8"
   },
   "devDependencies": {

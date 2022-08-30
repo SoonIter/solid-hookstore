@@ -1,5 +1,6 @@
 {
-  "name": "solid-hookstore",
+  "name": "@solid-hookstore/monorepo",
+  "private": true,
   "version": "0.0.3",
   "packageManager": "pnpm@7.5.0",
   "description": "solid-hookstore monorepo template",
@@ -28,9 +29,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "nr generate && tsup",
+    "build": "pnpm --filter=!./packages/playground build",
     "release": "nr build && npx bumpp patch --commit '🔖v'",
-    "publish": "pnpm publish",
     "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",
@@ -48,8 +48,8 @@
     "solid-js": "^1.5.1"
   },
   "devDependencies": {
-    "soon-cli": "1.1.9",
     "@antfu/ni": "^0.17.2",
+    "@changesets/cli": "^2.24.4",
     "@typescript-eslint/parser": "^5.35.1",
     "@vitest/ui": "^0.22.0",
     "bumpp": "^8.2.1",
@@ -60,6 +60,7 @@
     "happy-dom": "^6.0.4",
     "lint-staged": "13.0.3",
     "simple-git-hooks": "^2.8.0",
+    "soon-cli": "1.1.9",
     "tsup": "^6.2.2",
     "typescript": "^4.7.4",
     "vite": "^3.0.8",
