@@ -27,10 +27,6 @@
     "release": "nr build && nr publish",
     "publish": "pnpm publish"
   },
-  "dependencies": {
-    "@solidjs/router": "^0.4.2",
-    "solid-js": "^1.4.8"
-  },
   "devDependencies": {
     "@solid-hookstore/basic": "workspace:*",
     "@solid-hookstore/hooks": "workspace:*"

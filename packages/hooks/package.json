@@ -27,8 +27,6 @@
     "generate": "soon glob ./use*/index.ts ./create*/index.ts"
   },
   "dependencies": {
-    "@solidjs/router": "^0.4.2",
-    "solid-js": "^1.4.8",
     "@solid-hookstore/shared": "workspace:*"
   },
   "devDependencies": {}

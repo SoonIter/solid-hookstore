@@ -6,5 +6,6 @@ export default defineConfig({
   splitting: true,
   // minify: true,
   format: ["esm", "cjs", "iife"],
+  external: ["@solidjs/router", "solid-js"],
   tsconfig: "./tsconfig.json",
 });

@@ -22,17 +22,11 @@
   "unpkg": "./dist/index.glob.min.js",
   "jsdelivr": "./dist/index.glob.min.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "package.json",
-    "README.md",
-    "LICENSE"
-  ],
   "scripts": {
     "build": "pnpm --filter=!./packages/playground build",
     "bump": "pnpm changeset && pnpm changeset version",
     "prerelease": "ni && nr build",
-    "release":"pnpm -r publish --filter=./packages/hooks --filter=./packages/basic",
+    "release": "pnpm -r publish --filter=./packages/publish --filter=./packages/hooks --filter=./packages/basic",
     "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",
@@ -47,18 +41,17 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "solid-js": "^1.5.2"
+    "@solidjs/router": "^0.4.2",
+    "solid-js": "^1.5.1"
   },
   "devDependencies": {
     "@antfu/ni": "^0.18.0",
     "@changesets/cli": "^2.24.4",
     "@typescript-eslint/parser": "^5.36.1",
     "@vitest/ui": "^0.22.1",
-    "bumpp": "^8.2.1",
     "c8": "^7.12.0",
     "eslint": "^8.23.0",
     "eslint-plugin-solid": "~0.7.1",
-    "fast-glob": "^3.2.11",
     "happy-dom": "^6.0.4",
     "lint-staged": "13.0.3",
     "simple-git-hooks": "^2.8.0",
