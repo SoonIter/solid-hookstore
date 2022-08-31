@@ -31,7 +31,8 @@
   "scripts": {
     "build": "pnpm --filter=!./packages/playground build",
     "bump": "pnpm changeset && pnpm changeset version",
-    "release": "ni && nr build && pnpm publish -r",
+    "prerelease": "ni && nr build",
+    "release":"pnpm -r publish --filter=./packages/hooks --filter=./packages/basic",
     "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",
