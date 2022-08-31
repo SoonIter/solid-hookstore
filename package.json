@@ -30,7 +30,8 @@
   ],
   "scripts": {
     "build": "pnpm --filter=!./packages/playground build",
-    "release": "nr build && npx bumpp patch --commit '🔖v'",
+    "bump": "pnpm changeset && pnpm changeset version",
+    "release": "ni && nr build && pnpm publish -r",
     "ci": "nr lint:fix && nr test:once",
     "test": "vitest",
     "test:once": "vitest run",
@@ -45,26 +46,26 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "solid-js": "^1.5.1"
+    "solid-js": "^1.5.2"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.17.2",
+    "@antfu/ni": "^0.18.0",
     "@changesets/cli": "^2.24.4",
-    "@typescript-eslint/parser": "^5.35.1",
-    "@vitest/ui": "^0.22.0",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitest/ui": "^0.22.1",
     "bumpp": "^8.2.1",
     "c8": "^7.12.0",
-    "eslint": "^8.22.0",
+    "eslint": "^8.23.0",
     "eslint-plugin-solid": "~0.7.1",
     "fast-glob": "^3.2.11",
     "happy-dom": "^6.0.4",
     "lint-staged": "13.0.3",
     "simple-git-hooks": "^2.8.0",
     "soon-cli": "1.1.9",
-    "tsup": "^6.2.2",
-    "typescript": "^4.7.4",
-    "vite": "^3.0.8",
-    "vitest": "^0.22.0"
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vitest": "^0.22.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

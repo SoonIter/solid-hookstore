@@ -1,6 +1,6 @@
 {
   "name": "@solid-hookstore/vite-solid-playground",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -9,22 +9,22 @@
   "dependencies": {
     "@solidjs/router": "^0.4.2",
     "solid-hookstore": "workspace:*",
-    "@solid-hookstore/basic":"workspace:*",
+    "@solid-hookstore/basic": "workspace:*",
     "@solid-hookstore/hooks": "workspace:*",
-    "solid-js": "^1.4.8"
+    "solid-js": "^1.5.2"
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.14",
-    "@unocss/core": "^0.45.5",
-    "@unocss/preset-attributify": "^0.45.5",
-    "@unocss/preset-icons": "^0.45.5",
-    "@unocss/preset-uno": "^0.45.5",
+    "@unocss/core": "^0.45.13",
+    "@unocss/preset-attributify": "^0.45.13",
+    "@unocss/preset-icons": "^0.45.13",
+    "@unocss/preset-uno": "^0.45.13",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4",
-    "unocss": "^0.45.5",
-    "unplugin-auto-import": "^0.11.1",
+    "typescript": "^4.8.2",
+    "unocss": "^0.45.13",
+    "unplugin-auto-import": "^0.11.2",
     "unplugin-icons": "^0.14.8",
-    "vite": "^3.0.4",
+    "vite": "^3.0.9",
     "vite-plugin-solid": "^2.3.0"
   }
 }
