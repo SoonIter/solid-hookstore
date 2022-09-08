@@ -1,7 +1,7 @@
 {
   "name": "@solid-hookstore/hooks",
   "version": "0.0.3",
-  "description": "@solid-hookstore/basic",
+  "description": "@solid-hookstore/hooks",
   "author": {
     "name": "SoonIter",
     "email": "1730214056@qq.com"
@@ -24,10 +24,9 @@
   ],
   "scripts": {
     "build": "nr generate && tsup",
-    "generate": "soon glob ./use*/index.ts ./create*/index.ts"
+    "generate": "soon glob ./use*/index.{ts,tsx} ./create*/index.{ts,tsx}"
   },
   "dependencies": {
-    "@solid-hookstore/shared": "workspace:*"
   },
   "devDependencies": {}
 }

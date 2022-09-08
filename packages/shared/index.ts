@@ -1,3 +1,2 @@
-import add from './src/add';
-export * from './src/access';
-export { add }
+export * from "./src/access";
+export * from "./src/getRect";

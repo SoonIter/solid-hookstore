@@ -9,12 +9,11 @@ const createHookStore = () => {
     Params extends any[]
   >(name: Name, fn: (...arr: Params) => StoreType) {
     return createRoot(() => {
-      console.log("he")
       // retype
       const store = globalStore as Record<Name, StoreType>;
 
       if (store?.[name] !== undefined) {
-        return () => store[name];
+        return () => store[name] as StoreType;
       }
       return (...args: Params) => (store[name] = fn.apply(args));
     });

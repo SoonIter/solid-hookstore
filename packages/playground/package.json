@@ -11,6 +11,7 @@
     "solid-hookstore": "workspace:*",
     "@solid-hookstore/basic": "workspace:*",
     "@solid-hookstore/hooks": "workspace:*",
+    "@solid-hookstore/shared": "workspace:*",
     "solid-js": "^1.5.2"
   },
   "devDependencies": {
