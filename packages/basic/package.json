@@ -1,6 +1,6 @@
 {
   "name": "@solid-hookstore/basic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "@solid-hookstore/basic",
   "author": {
     "name": "SoonIter",
@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "build": "nr generate && tsup",
-    "dev":"nr generate && tsup --watch",
+    "dev": "nr generate && tsup --watch",
     "generate": "soon glob ./src/*.ts"
   },
   "dependencies": {
