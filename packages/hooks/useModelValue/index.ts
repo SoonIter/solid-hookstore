@@ -1,3 +1,4 @@
+import { Signal } from "@solid-hookstore/basic";
 import { Accessor, createEffect, createSignal, Setter } from "solid-js";
 
 function createModelValue<
@@ -22,7 +23,7 @@ function createModelValue<
   createEffect(() => {
     props[onChangeKey] && props[onChangeKey]?.(value());
   });
-  return [value, setValue] as [Accessor<T>, Setter<T>];
+  return [Signal(value, setValue), setValue] as const;
 }
 
 export default createModelValue;

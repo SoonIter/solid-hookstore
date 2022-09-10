@@ -23,10 +23,14 @@
     "LICENSE"
   ],
   "scripts": {
+    "dev": "nr generate && tsup --watch",
     "build": "nr generate && tsup",
     "generate": "soon glob ./use*/index.{ts,tsx} ./create*/index.{ts,tsx}"
   },
   "dependencies": {
+    "@solid-hookstore/basic": "workspace:*"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vite-plugin-solid": "^2.3.0"
+  }
 }

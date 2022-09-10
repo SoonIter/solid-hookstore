@@ -33,17 +33,16 @@
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "lint": "eslint ./packages/**/*.ts",
-    "lint:fix": "nr lint --fix",
-    "generate": "soon glob ./packages/hooks/use*/index.ts ./packages/basic/index.ts"
+    "lint:fix": "nr lint --fix"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
+    "@solid-hookstore/shared": "workspace:*",
     "@solidjs/router": "^0.4.2",
-    "solid-js": "^1.5.1",
-    "@solid-hookstore/shared": "workspace:*"
+    "solid-js": "^1.5.1"
   },
   "devDependencies": {
     "@antfu/ni": "^0.18.0",
@@ -51,6 +50,8 @@
     "@typescript-eslint/parser": "^5.36.1",
     "@vitest/ui": "^0.22.1",
     "c8": "^7.12.0",
+    "esbuild": "^0.15.7",
+    "esbuild-plugin-solid": "^0.4.2",
     "eslint": "^8.23.0",
     "eslint-plugin-solid": "~0.7.1",
     "happy-dom": "^6.0.4",
@@ -60,6 +61,7 @@
     "tsup": "^6.2.3",
     "typescript": "^4.8.2",
     "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0",
     "vitest": "^0.22.1"
   },
   "simple-git-hooks": {

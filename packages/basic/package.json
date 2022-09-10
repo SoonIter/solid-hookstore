@@ -24,6 +24,7 @@
   ],
   "scripts": {
     "build": "nr generate && tsup",
+    "dev":"nr generate && tsup --watch",
     "generate": "soon glob ./src/*.ts"
   },
   "dependencies": {
