@@ -1,5 +1,7 @@
 # solid-hookstore
 
+[![NPM Version](https://img.shields.io/npm/v/solid-hookstore.svg?style=for-the-badge)](https://www.npmjs.com/package/solid-hookstore)
+
 ## QuickStart
 
 ```bash
