@@ -14,7 +14,6 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "unpkg": "./dist/index.global.js",
-  "jsdelivr": "./dist/index.global.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -25,7 +24,7 @@
   "scripts": {
     "dev": "nr generate && tsup --watch",
     "build": "nr generate && tsup",
-    "generate": "soon glob ./use*/index.{ts,tsx} ./create*/index.{ts,tsx}"
+    "generate": "cd ./src && soon glob ./use*/index.{ts,tsx} ./create*/index.{ts,tsx}"
   },
   "dependencies": {
     "@solid-hookstore/basic": "workspace:*"

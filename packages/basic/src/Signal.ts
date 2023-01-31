@@ -12,7 +12,6 @@ function Signal<T>(getter: Accessor<T> | T, setter?: Setter<T>): ISignal<T> {
     const [value, setValue] = createSignal<T>(getter as T);
     const accessor: ISignal<T> = () => value();
     accessor.set = setValue;
-    console.log("12312122213")
     return accessor;
   }
 

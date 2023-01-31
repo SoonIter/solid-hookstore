@@ -6,7 +6,7 @@
   "description": "solid-hookstore monorepo template",
   "author": {
     "name": "SoonIter",
-    "email": "1730214056@qq.com"
+    "email": "sooniter@gmail.com"
   },
   "license": "MIT",
   "repository": "https://github.com/SoonIter/solid-hookstore",
@@ -28,6 +28,7 @@
     "prerelease": "ni && nr build",
     "release": "pnpm -r publish --filter=./packages/publish --filter=./packages/hooks --filter=./packages/basic",
     "ci": "nr lint:fix && nr test:once",
+    "ac": "changeset",
     "test": "vitest",
     "test:once": "vitest run",
     "test:ui": "vitest --ui",
@@ -42,7 +43,7 @@
   "dependencies": {
     "@solid-hookstore/shared": "workspace:*",
     "@solidjs/router": "^0.4.2",
-    "solid-js": "^1.5.1"
+    "solid-js": "^1.5.4"
   },
   "devDependencies": {
     "@antfu/ni": "^0.18.0",
@@ -57,7 +58,7 @@
     "happy-dom": "^6.0.4",
     "lint-staged": "13.0.3",
     "simple-git-hooks": "^2.8.0",
-    "soon-cli": "^1.1.11",
+    "soon-cli": "^1.1.13",
     "tsup": "^6.2.3",
     "typescript": "^4.8.2",
     "vite": "^3.0.9",

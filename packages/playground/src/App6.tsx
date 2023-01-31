@@ -6,6 +6,9 @@ const App = () => {
   const x = Signal(1223);
   // @ts-ignore
   const mouse = useMouse(divEle.current);
+  console.log(mouse)
+
+  console.log(x)
 
   return (
     // @ts-ignore

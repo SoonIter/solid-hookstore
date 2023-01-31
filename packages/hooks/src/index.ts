@@ -1,5 +1,6 @@
 export * from './useBoolean/index';
 export * from './useCounter/index';
+export * from './useDark/index';
 export * from './useEventListener/index';
 export * from './useLocalStorage/index';
 export * from './useModelValue/index';

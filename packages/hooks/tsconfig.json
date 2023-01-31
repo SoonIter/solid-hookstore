@@ -8,6 +8,7 @@
     "outDir": "dist",
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "declaration": true
+    "declaration": true,
+    "declarationMap": true
   }
 }
