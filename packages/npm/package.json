@@ -1,0 +1,34 @@
+{
+  "name": "solid-hookstore",
+  "version": "0.0.7",
+  "description": "solid-hookstore monorepo template",
+  "author": {
+    "name": "SoonIter",
+    "email": "sooniter@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/SoonIter/solid-hookstore",
+  "bugs": {
+    "url": "https://github.com/SoonIter/solid-hookstore/issues"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.glob.min.js",
+  "jsdelivr": "./dist/index.glob.min.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "release": "nr build && nr publish",
+    "publish": "pnpm publish"
+  },
+  "devDependencies": {
+    "@solid-hookstore/basic": "workspace:*",
+    "@solid-hookstore/hooks": "workspace:*"
+  }
+}
