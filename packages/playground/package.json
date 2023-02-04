@@ -12,7 +12,7 @@
     "@solid-hookstore/basic": "workspace:*",
     "@solid-hookstore/hooks": "workspace:*",
     "@solid-hookstore/shared": "workspace:*",
-    "solid-js": "^1.5.2"
+    "solid-js": "^1.6.10"
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.14",

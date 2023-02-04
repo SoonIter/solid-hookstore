@@ -24,12 +24,17 @@
   "scripts": {
     "dev": "nr generate && tsup --watch",
     "build": "nr generate && tsup",
-    "generate": "cd ./src && soon glob ./use*/index.{ts,tsx} ./create*/index.{ts,tsx}"
+    "generate": "cd ./src && soon glob ./use*/index.{ts,tsx} ./create*/index.{ts,tsx} || 0"
   },
   "dependencies": {
     "@solid-hookstore/basic": "workspace:*"
   },
   "devDependencies": {
-    "vite-plugin-solid": "^2.3.0"
+    "@solid-hookstore/config": "workspace:*",
+    "@solid-hookstore/shared": "workspace:*",
+    "vite-plugin-solid": "^2.3.0",
+    "tsup": "^6.5.0",
+    "solid-js": "^1.6.10",
+    "soon-cli": "^1.1.22"
   }
 }

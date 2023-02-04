@@ -7,6 +7,10 @@
   "scripts": {
     "build": ""
   },
+  "devDependencies": {
+    "@solid-hookstore/config": "workspace:*",
+    "solid-js": "^1.6.10"
+  },
   "author": "SoonIter",
   "license": "MIT"
 }

@@ -1,4 +1,5 @@
-import { Accessor, createSignal, Setter } from 'solid-js';
+import { Accessor, createSignal } from 'solid-js';
+import type { Setter } from 'solid-js';
 
 export interface ISignal<T> {
   (): T;

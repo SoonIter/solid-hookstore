@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["solid-js"],
+    "removeComments": false,
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "declaration": true,
+    "declarationMap": true
+  }
+}

@@ -28,7 +28,10 @@
     "publish": "pnpm publish"
   },
   "devDependencies": {
+    "@solid-hookstore/config": "workspace:*",
     "@solid-hookstore/basic": "workspace:*",
-    "@solid-hookstore/hooks": "workspace:*"
+    "@solid-hookstore/hooks": "workspace:*",
+    "tsup": "^6.5.0",
+    "solid-js": "^1.6.10"
   }
 }

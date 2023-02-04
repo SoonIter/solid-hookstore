@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "@solid-hookstore/config/tsconfig.json",
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
@@ -7,8 +7,8 @@
     "rootDir": "./",
     "outDir": "dist",
     "jsx": "preserve",
+
     "jsxImportSource": "solid-js",
-    "declaration": true,
     "declarationMap": true
   }
 }

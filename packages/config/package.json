@@ -1,0 +1,19 @@
+{
+  "name": "@solid-hookstore/config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "build": ""
+  },
+  "devDependencies": {
+    "@solidjs/router": "^0.4.2",
+    "solid-js": "^1.5.4",
+    "eslint": "^8.23.0",
+    "eslint-plugin-solid": "^0.9.4",
+    "tsup": "^6.5.0",
+    "@typescript-eslint/parser": "^5.36.1"
+  },
+  "author": "SoonIter",
+  "license": "MIT"
+}

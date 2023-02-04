@@ -29,5 +29,14 @@
   },
   "dependencies": {
     "@solid-hookstore/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@solid-hookstore/config": "workspace:*",
+    "tsup": "^6.5.0",
+    "soon-cli": "^2.0.3",
+    "solid-js": "^1.6.10"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.6.10"
   }
 }
