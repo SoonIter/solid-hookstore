@@ -22,9 +22,9 @@
     "LICENSE"
   ],
   "scripts": {
-    "dev": "nr generate && tsup --watch",
-    "build": "nr generate && tsup",
-    "generate": "cd ./src && soon glob ./use*/index.{ts,tsx} ./create*/index.{ts,tsx} || 0"
+    "dev": "tsup --watch",
+    "build": "rm -rf ./dist && tsup",
+    "generate": "soon glob './src/use*/index.{ts,tsx}' './src/create*/index.{ts,tsx}' -p ./src"
   },
   "dependencies": {
     "@solid-hookstore/basic": "workspace:*"
@@ -35,6 +35,9 @@
     "vite-plugin-solid": "^2.3.0",
     "tsup": "^6.5.0",
     "solid-js": "^1.6.10",
-    "soon-cli": "^1.1.22"
+    "soon-cli": "^2.0.3"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.6.10"
   }
 }

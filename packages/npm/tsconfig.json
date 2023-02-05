@@ -1,6 +1,8 @@
 {
   "extends": "@solid-hookstore/config/tsconfig.json",
   "compilerOptions": {
-    "rootDir": "."
+    "rootDir": ".",
+    "declaration": true,
+    "types": ["../basic", "../hooks"]
   }
 }

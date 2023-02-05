@@ -23,8 +23,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "nr generate && tsup",
-    "dev": "nr generate && tsup --watch",
+    "build": "rm -rf ./dist && tsup",
+    "dev": "tsup --watch",
     "generate": "soon glob ./src/*.ts"
   },
   "dependencies": {

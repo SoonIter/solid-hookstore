@@ -26,7 +26,7 @@ importers:
       '@typescript-eslint/parser': ^5.36.1
       eslint: ^8.23.0
       eslint-plugin-solid: ^0.9.4
-      solid-js: ^1.5.4
+      solid-js: ^1.6.10
       tsup: ^6.5.0
     devDependencies:
       '@solidjs/router': 0.4.3_solid-js@1.6.10
@@ -42,7 +42,7 @@ importers:
       '@solid-hookstore/config': workspace:*
       '@solid-hookstore/shared': workspace:*
       solid-js: ^1.6.10
-      soon-cli: ^1.1.22
+      soon-cli: ^2.0.3
       tsup: ^6.5.0
       vite-plugin-solid: ^2.3.0
     dependencies:
@@ -51,7 +51,7 @@ importers:
       '@solid-hookstore/config': link:../config
       '@solid-hookstore/shared': link:../shared
       solid-js: 1.6.10
-      soon-cli: 1.1.22
+      soon-cli: 2.0.3
       tsup: 6.5.0
       vite-plugin-solid: 2.5.0_solid-js@1.6.10
 
