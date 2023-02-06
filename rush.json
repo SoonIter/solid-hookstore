@@ -394,11 +394,13 @@
     },
     {
       "packageName": "@solid-hookstore/hooks",
-      "projectFolder": "packages/hooks"
+      "projectFolder": "packages/hooks",
+      "shouldPublish": true
     },
     {
       "packageName": "@solid-hookstore/basic",
-      "projectFolder": "packages/basic"
+      "projectFolder": "packages/basic",
+      "shouldPublish": true
     },
     {
       "packageName": "@solid-hookstore/config",
@@ -406,21 +408,8 @@
     },
     {
       "packageName": "solid-hookstore",
-      "projectFolder": "packages/npm"
+      "projectFolder": "packages/npm",
+      "shouldPublish": true
     }
-    //
-    // {
-    //   "packageName": "my-controls",
-    //   "projectFolder": "libraries/my-controls",
-    //   "reviewCategory": "production",
-    //   "tags": [ "frontend-team" ]
-    // },
-    //
-    // {
-    //   "packageName": "my-toolchain",
-    //   "projectFolder": "tools/my-toolchain",
-    //   "reviewCategory": "tools",
-    //   "tags": [ "tools" ]
-    // }
   ]
 }

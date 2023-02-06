@@ -4,9 +4,6 @@
  */
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
-  "phases": [
-    
-  ],
   /**
    * Custom "commands" introduce new verbs for the command-line.  To see the help for these
    * example commands, try "rush --help", "rush my-bulk-command --help", or
@@ -131,7 +128,7 @@
     //    *
     //    * Note: The default value is false. In Rush 5.7.x and earlier, the default value was true.
     //    */
-    //   "allowWarningsInSuccessfulBuild": false,
+      // "allowWarningsInSuccessfulBuild": true
     // 
     //   /**
     //    * If true then this command will be incremental like the built-in "build" command

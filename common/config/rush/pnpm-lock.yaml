@@ -62,10 +62,11 @@ importers:
       '@solid-hookstore/hooks': workspace:*
       solid-js: ^1.6.10
       tsup: ^6.5.0
-    devDependencies:
+    dependencies:
       '@solid-hookstore/basic': link:../basic
-      '@solid-hookstore/config': link:../config
       '@solid-hookstore/hooks': link:../hooks
+    devDependencies:
+      '@solid-hookstore/config': link:../config
       solid-js: 1.6.10
       tsup: 6.5.0
 

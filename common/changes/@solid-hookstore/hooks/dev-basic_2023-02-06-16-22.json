@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@solid-hookstore/hooks",
+      "comment": "migrate to rush monorepo",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@solid-hookstore/hooks"
+}
