@@ -1,6 +1,6 @@
 {
   "name": "@solid-hookstore/hooks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "@solid-hookstore/hooks",
   "author": {
     "name": "SoonIter",
@@ -23,7 +23,8 @@
   ],
   "scripts": {
     "dev": "tsup --watch",
-    "build": "rm -rf ./dist && tsup",
+    "build": "rm -rf ./dist ./tsconfig.tsbuildinfo && tsup && npm run build:type",
+    "build:type": "tsc",
     "generate": "soon glob './src/use*/index.{ts,tsx}' './src/create*/index.{ts,tsx}' -p ./src"
   },
   "dependencies": {
@@ -35,7 +36,8 @@
     "vite-plugin-solid": "^2.3.0",
     "tsup": "^6.5.0",
     "solid-js": "^1.6.10",
-    "soon-cli": "^2.0.3"
+    "soon-cli": "^2.0.3",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "solid-js": "^1.6.10"

@@ -390,7 +390,8 @@
     // },
     {
       "packageName": "@solid-hookstore/shared",
-      "projectFolder": "packages/shared"
+      "projectFolder": "packages/shared",
+      "shouldPublish": true
     },
     {
       "packageName": "@solid-hookstore/hooks",

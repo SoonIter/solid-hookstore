@@ -1,7 +1,7 @@
 export default {
   entry: ['./src/index.ts'],
   clean: true,
-  dts: true,
+  dts: false,
   splitting: true,
   format: ['esm', 'cjs'],
   external: ['@solidjs/router', 'solid-js'],

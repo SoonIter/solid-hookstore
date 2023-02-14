@@ -1,6 +1,6 @@
 {
   "name": "@solid-hookstore/basic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "@solid-hookstore/basic",
   "author": {
     "name": "SoonIter",
@@ -23,7 +23,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "rm -rf ./dist && tsup",
+    "build": "rm -rf ./dist ./tsconfig.tsbuildinfo && tsup && npm run build:type",
+    "build:type": "tsc",
     "dev": "tsup --watch",
     "generate": "soon glob ./src/*.ts"
   },
@@ -34,7 +35,8 @@
     "@solid-hookstore/config": "workspace:*",
     "tsup": "^6.5.0",
     "soon-cli": "^2.0.3",
-    "solid-js": "^1.6.10"
+    "solid-js": "^1.6.10",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "solid-js": "^1.6.10"

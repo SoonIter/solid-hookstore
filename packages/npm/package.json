@@ -1,6 +1,6 @@
 {
   "name": "solid-hookstore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "solid-hookstore monorepo template",
   "author": {
     "name": "SoonIter",
@@ -28,13 +28,14 @@
     "publish": "pnpm publish"
   },
   "dependencies": {
-    "@solid-hookstore/basic": "workspace:*",
-    "@solid-hookstore/hooks": "workspace:*"
+    "@solid-hookstore/hooks": "workspace:*",
+    "@solid-hookstore/basic": "workspace:*"
   },
   "devDependencies": {
     "@solid-hookstore/config": "workspace:*",
     "tsup": "^6.5.0",
-    "solid-js": "^1.6.10"
+    "solid-js": "^1.6.10",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "solid-js": "^1.6.10"

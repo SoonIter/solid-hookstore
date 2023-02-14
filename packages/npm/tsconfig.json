@@ -3,6 +3,9 @@
   "compilerOptions": {
     "rootDir": ".",
     "declaration": true,
-    "types": ["../basic", "../hooks"]
-  }
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "composite": true
+  },
+  "references": [{ "path": "../basic/tsconfig.json" }, { "path": "../hooks/tsconfig.json" }]
 }

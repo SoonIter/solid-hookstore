@@ -1,19 +1,11 @@
-# solid-hookstore
+# Change Log - solid-hookstore
 
-## 0.0.7
+This log was last generated on Tue, 14 Feb 2023 14:55:52 GMT and should not be manually modified.
 
-### Patch Changes
+## 0.1.1
+Tue, 14 Feb 2023 14:55:52 GMT
 
-- 9f8ca74: move the folders to "src"
+### Patches
 
-## 0.0.6
+- migrate to rush monorepo
 
-### Patch Changes
-
-- createMotionTransform,Signal,useMouse
-
-## 0.0.4
-
-### Patch Changes
-
-- init

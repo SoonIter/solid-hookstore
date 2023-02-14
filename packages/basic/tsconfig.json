@@ -2,7 +2,12 @@
   "extends": "@solid-hookstore/config/tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"]
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "declarationDir": "dist",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "composite": true,
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
   },
-  "include": ["**/*"]
+  "include": ["src", "index.ts"]
 }

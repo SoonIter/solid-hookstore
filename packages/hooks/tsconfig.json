@@ -4,11 +4,14 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "rootDir": "./",
+    "rootDir": "src",
     "outDir": "dist",
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "declaration": true,
     "jsx": "preserve",
-
-    "jsxImportSource": "solid-js",
-    "declarationMap": true
-  }
+    "jsxImportSource": "solid-js"
+  },
+  "references": [{ "path": "../basic/tsconfig.json" }],
+  "include": ["src"]
 }

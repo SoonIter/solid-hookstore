@@ -1,9 +1,11 @@
-# @solid-hookstore/basic
+# Change Log - @solid-hookstore/basic
 
-## 0.0.4
+This log was last generated on Tue, 14 Feb 2023 14:55:52 GMT and should not be manually modified.
 
-### Patch Changes
+## 0.1.1
+Tue, 14 Feb 2023 14:55:52 GMT
 
-- createMotionTransform,Signal,useMouse
-- Updated dependencies
-  - @solid-hookstore/shared@0.1.1
+### Patches
+
+- migrate to rush monorepo
+
