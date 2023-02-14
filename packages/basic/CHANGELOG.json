@@ -2,6 +2,23 @@
   "name": "@solid-hookstore/basic",
   "entries": [
     {
+      "version": "0.1.2",
+      "tag": "@solid-hookstore/basic_v0.1.2",
+      "date": "Tue, 14 Feb 2023 15:07:36 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "work normally now"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@solid-hookstore/shared\" to `0.1.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.1",
       "tag": "@solid-hookstore/basic_v0.1.1",
       "date": "Tue, 14 Feb 2023 14:55:52 GMT",

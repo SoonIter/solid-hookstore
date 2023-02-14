@@ -1,0 +1,17 @@
+{
+  "name": "@solid-hookstore/shared",
+  "entries": [
+    {
+      "version": "0.1.1",
+      "tag": "@solid-hookstore/shared_v0.1.1",
+      "date": "Tue, 14 Feb 2023 15:07:36 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "work normally now"
+          }
+        ]
+      }
+    }
+  ]
+}
