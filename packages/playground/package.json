@@ -1,10 +1,12 @@
 {
-  "name": "@solid-hookstore/vite-solid-playground",
+  "name": "playground",
+  "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "build": ""
   },
   "dependencies": {
     "@solidjs/router": "^0.4.2",
@@ -25,7 +27,7 @@
     "unocss": "^0.45.13",
     "unplugin-auto-import": "^0.11.2",
     "unplugin-icons": "^0.14.8",
-    "vite": "^3.0.9",
+    "vite": "^4",
     "vite-plugin-solid": "^2.3.0"
   }
 }

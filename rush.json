@@ -411,6 +411,10 @@
       "packageName": "solid-hookstore",
       "projectFolder": "packages/npm",
       "shouldPublish": true
+    },
+    {
+      "packageName": "playground",
+      "projectFolder": "packages/playground"
     }
   ]
 }

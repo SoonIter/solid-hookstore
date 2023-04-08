@@ -1,6 +1,6 @@
 import { Component } from 'solid-js';
-import { createHookStore } from 'solid-hookstore';
-import { useEventListener } from '@solid-hookstore/hooks/useEventListener';
+import { createHookStore, Signal } from 'solid-hookstore';
+import { useEventListener } from '@solid-hookstore/hooks';
 
 const { defineHookStore } = createHookStore();
 const { defineHookStore: define2 } = createHookStore();
@@ -81,11 +81,16 @@ const App: Component = () => {
   );
 };
 
+// const Appp = () => {
+//   const x = Signal('123');
+//   return <div>{x()()}</div>;
+// };
 export default () => {
   return (
     <>
-      <App />
-      <App2 />
+      <App></App>
+      {/* <App />
+      <App2 /> */}
     </>
   );
 };

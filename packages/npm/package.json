@@ -23,7 +23,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsc",
+    "build:type": "tsc --emitDeclarationOnly",
     "release": "nr build && nr publish",
     "publish": "pnpm publish"
   },

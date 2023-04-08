@@ -27,4 +27,8 @@ const App = () => {
   );
 };
 
+const Appp = () => {
+  const x = Signal('123');
+  return <div>{x()}</div>;
+};
 export default App;

@@ -1,11 +1,13 @@
 {
   "extends": "@solid-hookstore/config/tsconfig.json",
   "compilerOptions": {
-    "rootDir": ".",
+    "rootDir": "src",
     "declaration": true,
+    "emitDeclarationOnly": true,
     "declarationDir": "dist",
-    "outDir": "dist",
     "composite": true
   },
+  "include": ["src"],
+  "exclude": ["tsup.config.ts"],
   "references": [{ "path": "../basic/tsconfig.json" }, { "path": "../hooks/tsconfig.json" }]
 }
